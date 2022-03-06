@@ -5,16 +5,17 @@
 |---| --- | 
 | Imaging beamline | NEUTRA |
 | Neutron source | SINQ |
+| Experiment date | 2021-11-10 |
 | Camera | Andor DW936 |
 | Scintillator | 6LiF 300um thick |
 | Exposure time | 0.5s |
 | Readout time | approx 2s |
 | Pixel size | 88um |
-| Experiment date | 2021-11-10 |
+
 
 ## Sample materials
 
-| Label | Grain fraction |
-|---|---|
-| Sand 3| |
-| Sand 4| |
+| Label | Grain fraction | Image size | Number of images |
+|---|---|---|---|
+| Sand 3| | 351x501 pixels | 30 |
+| Sand 4| | 351x501 pixels | 29 |
