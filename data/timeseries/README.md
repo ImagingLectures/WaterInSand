@@ -17,5 +17,5 @@
 
 | Label | Grain fraction | Image size | Number of images |
 |---|---|---|---|
-| Sand 3| | 351x501 pixels | 30 |
-| Sand 4| | 351x501 pixels | 29 |
+| Sand 3| 0.1 - 3.2 mm | 351x501 pixels | 30 |
+| Sand 4| 0.4 - 0.8 mm | 351x501 pixels | 29 |
