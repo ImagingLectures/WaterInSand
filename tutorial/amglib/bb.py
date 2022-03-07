@@ -151,7 +151,7 @@ def polynomial_image(size,q) :
 
     return img
 
-def check_scatter_image(bb, est,  mask, areas=[100,1000], show=True, ax=None, cmap='jet', sym_cmap=False) :   
+def check_scatter_image(bb, est,  mask, areas=[100,1000], show=True, ax=None, cmap='jet', sym_cmap=False, clim = [0,10000]) :   
     lbb=label(mask)
 
     diff = bb - est 
@@ -184,7 +184,7 @@ def check_scatter_image(bb, est,  mask, areas=[100,1000], show=True, ax=None, cm
         if ax is None :
             fig,ax =plt.subplots(1,1,figsize=(10,10))
             
-        ax.imshow(bb,vmin=0,vmax=8000,cmap='gray')
+        ax.imshow(bb,vmin=clim[0],vmax=clim[1],cmap='gray')
         
         if sym_cmap :
             v = np.max([np.abs(df['Median'].max()),np.abs(df['Median'].min())])
@@ -216,9 +216,10 @@ def normalize(img,ob,dc, dose_roi=None,logarithm=True) :
         
     return n
 
-def remove_dc(img,dc) :
-    img = img - dc
-    img[img<1]=1
+def remove_dc(img,dc) : 
+    if dc != 0 :
+        img = img - dc
+        img[img<1]=1
     return img
 
 def D(img, roi) :
