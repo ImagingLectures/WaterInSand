@@ -217,7 +217,7 @@ def normalize(img,ob,dc, dose_roi=None,logarithm=True) :
     return n
 
 def remove_dc(img,dc) : 
-    if dc != 0 :
+    if dc is not None :
         img = img - dc
         img[img<1]=1
     return img
@@ -243,4 +243,6 @@ def normalization_with_BB(sample,ob,dc,bbsample,bbob,ssample,sob,roi,tau) :
     corrected = (sample - ssample*ds)/(ob - sob*do) * (do/ds)
     
     return corrected
-    
+
+
+
