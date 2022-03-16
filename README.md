@@ -1,4 +1,12 @@
 # WaterInSand
 A tutorial to study water uptake in porous media.
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ImagingLectures/WaterInSand/HEAD?labpath=https%3A%2F%2Fgithub.com%2FImagingLectures%2FWaterInSand%2Fblob%2Fmain%2Ftutorial%2FWaterInSandTutorial.ipynb)
+## Preparation
+This tutorial is implemented as a jupyter notebook that can be run locally on your own computer or using google colab. The notebook doesn't require any exotic python modules and should work on an Anaconda installation the possible additions of tqdm and tifffile.
+
+```conda install tqdm tifffile```
+
+All dependencies are summarized in the [```environment.yml```](https://github.com/ImagingLectures/WaterInSand/blob/main/environment.yml).
+
+Once this is done, your are ready to go. Just start a jupyter session and navigate to the tutorial notebook located in ```tutorial/WaterInSand.ipynb```.
+
