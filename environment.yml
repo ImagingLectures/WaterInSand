@@ -8,3 +8,4 @@ dependencies:
   - matplotlib
   - tqdm
   - scikit-image
+  - tifffile
