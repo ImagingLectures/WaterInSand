@@ -4,8 +4,6 @@ Objectives:
 - Determine the attenuation coefficient for water.
 - Analysing a neutron radiography time series.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ImagingLectures/WaterInSand/blob/main/tutorial/WaterInSandTutorial.ipynb)
-
 <a href="https://colab.research.google.com/github/ImagingLectures/WaterInSand/blob/main/tutorial/WaterInSandTutorial.ipynb" target="_blank">
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
